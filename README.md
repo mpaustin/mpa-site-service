@@ -19,15 +19,13 @@ Set these environment variables in Heroku or your local shell:
 
 ## Heroku
 
-This repo declares `heroku-24` in `app.json` and pins Java 8 in `system.properties` so builds do not pick up Heroku-24's newer default JDK unexpectedly.
+This repo declares `heroku-26` in `app.json` and pins Java 8 in `system.properties` so builds do not pick up Heroku-26's newer default JDK unexpectedly.
 
-To update the live app stack, use an account with access to the app:
+To update the live app stack in the Heroku UI, choose the `heroku-26` stack for `mpa-site`, then deploy a new build. The CLI equivalent is:
 
 ```sh
-heroku stack:set heroku-24 -a mpa-site
+heroku stack:set heroku-26 -a mpa-site
 ```
-
-Then deploy a new build.
 
 ## Run
 
